@@ -31,7 +31,23 @@ To see the results, just go to the Task manager/ Click on the task manager and g
 
 ![Stdout Results](images/Stdout.png)
 
+# How to install Flink
+## Apache Flink
+if you have a mac, with brew you can install it as easy as:
+```bash
+brew install flink
+```
+If you point to http://localhost:8081 you will access to the Flink Web Dashboard
 
+## Flink on Cloudera
+if you are using a Cloudera cluster, you will need YARN and YARN required HDFS. After installing that, you need the Flink parcel from the URL's provided by [Cloudera Downloads](https://www.cloudera.com/downloads) on the DataFlow section. 
+After restarting Cloudera Manager, you will have the Service, and you can deploy it over that Cluster. 
 
+### Flink Service
+![Flink Service](images/Flink_Service.png)
 
+### Flink Configuration
+![Flink Configuration](images/Flink_Configuration.png)
 
+### Flink Role Distribution
+![Flink Configuration](images/Flink_Role_Distribution.png)
